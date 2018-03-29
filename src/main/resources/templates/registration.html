@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <form action="api" method="post" th:object="${employee}">
+            <b>Employee ID:</b><input type="text" th:field="*{empid}"/><br>
+            <b>First Name::</b><input type="text" th:field="*{firstname}"/><br/>
+            <b>Middle Name:</b><input type="text" th:field="*{middlename}"/><br/>
+            <b>Middle Name:</b><input type="text" th:field="*{lastname}"/><br/>
+           <!-- <b>Temporary Address:</b><input type="text" th:field="*{address_temp}"/><br/>
+            <b>Permanent Address:</b><input type="text" th:field="*{address_per}"/><br/> -->
+            <b>Phone Number:</b><input type="text" th:field="*{phone}"/><br/>
+            <b>Email ID:</b><input type="text" th:field="*{email}"/><br/>
+            <b>Gender:</b><input type="text" th:field="*{gender}"/><br/>
+            <b>Aadhar Number:</b><input type="text" th:field="*{aadhar_no}"/><br/>
+            <b>Religion:</b><input type="text" th:field="*{religion}"/><br/>
+            <b>User Name:</b><input type="text" th:field="*{username}"/><br/>
+            <b>Password:</b><input type="text" th:field="*{passsword}"/><br/>
+            <button type="submit">Add Employee</button>
+        </form>
+    </body>
+</html>
